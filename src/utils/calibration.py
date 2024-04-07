@@ -5,7 +5,7 @@ def mid_to_hz(pitch: int):
     return 440 * 2 ** ((pitch - 69) / 12)
 
 
-def generate_synth_data(pitch: int, num_harmonics: int = 5, duration=2, sr=16000):
+def generate_synth_data(pitch: int, num_harmonics: int = 5, duration=3, sr=16000):
     f0 = mid_to_hz(pitch)
     t = torch.arange(0, duration, 1/sr)
     harmonics = torch.stack([
