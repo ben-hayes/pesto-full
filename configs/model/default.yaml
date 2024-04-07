@@ -12,7 +12,7 @@ encoder:
   n_prefilt_layers: 2
   prefilt_kernel_size: 15
   residual: true
-  n_bins_in: ${eval:67 * ${data.bins_per_semitone}}
+  n_bins_in: ${eval:67 * ${data.bins_per_semitone} - 1}
   output_dim: ${eval:128 * ${data.bins_per_semitone}}
 
 equiv_loss_fn:
