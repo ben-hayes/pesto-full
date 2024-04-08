@@ -8,7 +8,7 @@ hop_duration: 10.
 fmin: 82.5  # A0
 fmax: null
 bins_per_semitone: 10
-n_bins: ${eval:99 * ${data.bins_per_semitone} - 1}
+n_bins: ${eval:75 * ${data.bins_per_semitone}}
 center_bins: true
 
 # data-loading related args

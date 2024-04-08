@@ -6,10 +6,10 @@ wandb:
   save_dir: "${paths.output_dir}"
   offline: false
   project: "PESTO"
-  log_model: False # upload lightning ckpts
+  log_model: True # upload lightning ckpts
   save_code: true
   prefix: "" # a string to put at the beginning of metric keys
-  # entity: "" # set to name of your wandb team
+  entity: "benhayes" # set to name of your wandb team
   group: ""
   tags: []
   job_type: ""
